@@ -1,47 +1,45 @@
-# Taller 0 - Transformaciones Geométricas con Matrices
+# Taller 0 - Transformaciones Geométricas
 
-Este proyecto implementa transformaciones geométricas (traslación,
-rotación y escalado) aplicadas a una figura en forma de casa usando
-**matrices de transformación homogéneas** en Python con `matplotlib` y
-`numpy`.
+Este taller implementa transformaciones geométricas básicas (traslación, rotación y escalado) sobre una figura en forma de casa, primero en **Python (Jupyter/Colab)** y de forma equivalente en **Unity**.
 
-## Contenido
+---
 
-1.  **Traslación**
-    -   Se implementa una función que aplica una matriz de traslación a
-        las coordenadas de la figura.\
-    -   Parámetros ajustables: `tx`, `ty` para mover la figura.
-2.  **Rotación**
-    -   Se utiliza una matriz de rotación con ángulos en radianes.\
-    -   Parámetro ajustable: `theta` (en grados).
-3.  **Escalado**
-    -   Se aplica una matriz de escala que permite agrandar o reducir la
-        figura.\
-    -   Parámetros ajustables: `sx`, `sy`.
-4.  **Animación**
-    -   Se genera un movimiento continuo de la figura usando bucles y
-        `matplotlib.animation`.\
-    -   Ejemplo: traslación progresiva hacia la derecha.
+## Parte 1: Python
 
-## Requisitos
+### Breve explicación de cada implementación
+1. **Traslación**  
+   - Se construye una matriz homogénea 3x3 que desplaza todos los puntos de la figura.  
+   - Parámetros: `dx`, `dy`.  
 
--   Python 3.x\
--   Numpy\
--   Matplotlib
+2. **Rotación**  
+   - Se construye una matriz homogénea 3x3 para girar la figura un ángulo `θ` respecto al origen.  
+   - Parámetro: `angulo` (en grados).  
 
-## Capturas / GIFs
+3. **Escalado**  
+   - Se construye una matriz homogénea 3x3 que multiplica los puntos por factores `sx` y `sy`.  
+   - Parámetros: `sx`, `sy`.  
 
-*(Aquí debes pegar las capturas de pantalla o GIFs de tus animaciones
-mostrando la casa moviéndose, rotando y escalando. Si no puedes subir
-GIFs, usa imágenes secuenciales con diferentes estados de la
-animación).*
+4. **Animación**  
+   - Se usa `matplotlib.animation.FuncAnimation` para interpolar los valores de traslación, rotación y escala en cada frame.  
 
-## Uso
+### Capturas de pantalla / GIFs (OBLIGATORIO)
+- Imagen 1: Casa original.  
+- Imagen 2: Traslación aplicada.  
+- Imagen 3: Rotación aplicada.  
+- Imagen 4: Escalado aplicado.  
+- GIF: Animación combinada.  
 
-Ejecutar en Jupyter Notebook:
+*(Subir los archivos PNG/GIF al repositorio y enlazarlos aquí).*
 
-``` bash
-jupyter notebook Taller_0.ipynb
-```
+### Código relevante
+El código está en el archivo [`taller_0.py`](./taller_0.py) y en el notebook [`Taller_0.ipynb`](./Taller_0.ipynb).  
 
-y correr las celdas según la transformación que quieras probar.
+Ejemplo de traslación en Python:
+```python
+def traslacion(x, y, dx, dy):
+    T = np.array([[1, 0, dx],
+                  [0, 1, dy],
+                  [0, 0, 1]])
+    puntos = np.column_stack([x, y, np.ones(len(x))])
+    puntos_t = (T @ puntos.T).T
+    return puntos_t[:,0], puntos_t[:,1]
