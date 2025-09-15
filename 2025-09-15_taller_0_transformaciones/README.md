@@ -109,10 +109,10 @@ def escalado(x, y, sx, sy):
   ![Esfera](threejs/Esfera.png)
 
 - Imagen 2: Traslación circular aplicada
-  ![TraslacionCircular](threejs/TraslacionCircular.png)
+  ![TraslacionCircular](threejs/TraslacionCircular.gif)
 
 - Imagen 3: Cubo rotando y escalando
-  ![CuboRotando](threejs/CuboRotando.png)
+  ![CuboRotando](threejs/CuboRotando.gif)
 
 - GIF: Animación completa con OrbitControls
   ![AnimacionReact](threejs/AnimacionReact.gif)
