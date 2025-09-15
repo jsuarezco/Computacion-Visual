@@ -217,20 +217,20 @@ export default function App() {
 
 ### Capturas de pantalla / GIFs
 
-* Imagen 1: Elipse inicial
-  ![Elipse](processing/elipse.png)
+* Imagen 1: Elipse inicial<br>
+  ![Elipse](processing/elipse.png)<br>
 
-* Imagen 2: Transformaciones aplicadas (`translate`, `rotate`, `scale`)
-  ![Transformaciones](processing/TransRotScal.png)
+* Imagen 2: Transformaciones aplicadas (`translate`, `rotate`, `scale`)<br>
+  ![Transformaciones](processing/TransRotScal.png)<br>
 
-* Imagen 3: Aislamiento de transformaciones (`pushMatrix` / `popMatrix`)
-  ![PushPop](processing/PushPop.png)
+* Imagen 3: Aislamiento de transformaciones (`pushMatrix` / `popMatrix`)<br>
+  ![PushPop](processing/PushPop.png)<br>
 
-* Imagen 4: Animación usando `frameCount` y `sin()`
-  ![Animacion](processing/Animation.gif)
+* Imagen 4: Animación usando `frameCount` y `sin()`<br>
+  ![Animacion](processing/Animation.gif)<br>
 
-* GIF: Combinación completa
-  ![AnimacionCompleta](processing/Combination.gif)
+* GIF: Combinación completa<br>
+  ![AnimacionCompleta](processing/Combination.gif)<br>
 
 ---
 
