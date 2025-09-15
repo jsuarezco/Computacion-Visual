@@ -181,3 +181,110 @@ export default function App() {
 
 ---
 
+## Parte 3: Processing (2D / 3D)
+
+### Breve explicación de cada implementación
+
+1. **Dibujar una elipse**
+
+   * Se crea una elipse estática en el canvas usando `ellipse(x, y, w, h)` como figura base.
+
+2. **Aplicar transformaciones `translate()`, `rotate()`, `scale()`**
+
+   * Se usa `translate(x, y)` para mover la elipse.
+   * `rotate(angle)` para girarla sobre su centro.
+   * `scale(sx, sy)` para escalarla en X y Y.
+   * Permite ver cómo cambian posición, orientación y tamaño de la figura.
+
+3. **Aislar transformaciones con `pushMatrix()` y `popMatrix()`**
+
+   * `pushMatrix()` guarda el estado actual de coordenadas.
+   * Se aplican transformaciones a la elipse.
+   * `popMatrix()` restaura el estado previo, evitando que afecte otras figuras.
+
+4. **Animación usando `frameCount`, `millis()` o `sin()`**
+
+   * `frameCount` → número de frames desde que empezó el sketch.
+   * `sin()` → genera movimientos oscilantes o escalado pulsante.
+   * `millis()` → permite animaciones basadas en tiempo real en milisegundos.
+
+5. **Combinación de todas las transformaciones y animación**
+
+   * Se combina traslación circular, rotación oscilante y escalado pulsante en un solo sketch.
+   * `pushMatrix()` y `popMatrix()` aseguran que cada elipse sea independiente.
+
+---
+
+### Capturas de pantalla / GIFs
+
+* Imagen 1: Elipse inicial
+  ![Elipse](processing/elipse.png)
+
+* Imagen 2: Transformaciones aplicadas (`translate`, `rotate`, `scale`)
+  ![Transformaciones](processing/TransRotScal.png)
+
+* Imagen 3: Aislamiento de transformaciones (`pushMatrix` / `popMatrix`)
+  ![PushPop](processing/PushPop.png)
+
+* Imagen 4: Animación usando `frameCount` y `sin()`
+  ![Animacion](processing/Animation.gif)
+
+* GIF: Combinación completa
+  ![AnimacionCompleta](processing/Combination.gif)
+
+---
+
+### Código relevante
+
+El código está en [`Taller_0_Processing.pde`](processing/Taller_0_Processing.pde):
+
+```java
+void setup() {
+  size(400, 400);
+  background(255);
+  fill(0, 150, 255);
+  stroke(0);
+}
+
+void draw() {
+  background(255);
+
+  float t = frameCount * 0.05; // tiempo para animación
+
+  // Combinación de transformaciones y animación
+  pushMatrix();
+    // Traslación circular
+    float x = width/2 + 100 * cos(t);
+    float y = height/2 + 100 * sin(t);
+    translate(x, y);
+
+    // Rotación oscilante
+    rotate(sin(t) * PI / 4);
+
+    // Escalado pulsante
+    float s = 1 + 0.5 * sin(t * 2);
+    scale(s);
+
+    // Dibujar la elipse transformada
+    ellipse(0, 0, 50, 30);
+  popMatrix();
+
+  // Otra elipse estática para mostrar que las transformaciones están aisladas
+  pushMatrix();
+    translate(300, 300);
+    ellipse(0, 0, 50, 30);
+  popMatrix();
+}
+```
+
+---
+
+### Explicación rápida
+
+* La elipse inicial es la figura base.
+* `translate()`, `rotate()` y `scale()` aplican transformaciones geométricas sobre la figura.
+* `pushMatrix()` / `popMatrix()` aíslan cada transformación, permitiendo varias figuras independientes.
+* `frameCount` y `sin()` permiten animar las transformaciones suavemente en el tiempo.
+* La combinación final muestra traslación circular, rotación oscilante y escalado pulsante simultáneamente.
+
+---
