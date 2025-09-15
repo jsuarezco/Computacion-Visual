@@ -36,7 +36,7 @@ Este taller implementa transformaciones geométricas básicas (traslación, rota
 
 
 ### Código relevante
-El código está en el archivo [`taller_0.py`](.python/taller_0.py) y en el notebook [`Taller_0.ipynb`](.python/Taller_0.ipynb).  
+El código está en el archivo [`taller_0.py`](python/taller_0.py) y en el notebook [`Taller_0.ipynb`](python/Taller_0.ipynb).  
 
 ### Funciones principales (Python)
 ```python
