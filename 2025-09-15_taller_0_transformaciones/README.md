@@ -69,7 +69,7 @@ def escalado(x, y, sx, sy):
     puntos = np.column_stack([x, y, np.ones(len(x))])
     puntos_t = (S @ puntos.T).T
     return puntos_t[:,0], puntos_t[:,1]
-´´´
+```
 
 ---
 
