@@ -181,4 +181,3 @@ export default function App() {
 
 ---
 
-Si quieres, puedo generar también la **sección final completa del README.md** uniendo Parte 1 (Python) y Parte 2 (React Three Fiber) para que quede lista para entregar. ¿Quieres que haga eso?
