@@ -23,16 +23,16 @@ Este taller implementa transformaciones geométricas básicas (traslación, rota
    - Se usa `matplotlib.animation.FuncAnimation` para interpolar los valores de traslación, rotación y escala en cada frame.  
 
 ### Capturas de pantalla / GIFs 
-- Imagen 1: Casa original.  
-![Casa](python/Casa.png)
-- Imagen 2: Traslación aplicada.  
-![Traslacion](python/Traslacion.png)
-- Imagen 3: Rotación aplicada.  
-![Rotacion](python/Rotacion.png)
-- Imagen 4: Escalado aplicado. 
-![Escalado](python/Escalado.png)
-- GIF: Animación combinada.  
-![Animation](python/Animation.gif)
+- Imagen 1: Casa original.  <br>
+![Casa](python/Casa.png)<br>
+- Imagen 2: Traslación aplicada.  <br>
+![Traslacion](python/Traslacion.png)<br>
+- Imagen 3: Rotación aplicada.  <br>
+![Rotacion](python/Rotacion.png)<br>
+- Imagen 4: Escalado aplicado. <br>
+![Escalado](python/Escalado.png)<br>
+- GIF: Animación combinada.  <br>
+![Animation](python/Animation.gif)<br>
 
 
 ### Código relevante
@@ -69,3 +69,6 @@ def escalado(x, y, sx, sy):
     puntos = np.column_stack([x, y, np.ones(len(x))])
     puntos_t = (S @ puntos.T).T
     return puntos_t[:,0], puntos_t[:,1]
+
+---
+
