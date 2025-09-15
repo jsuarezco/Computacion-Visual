@@ -121,7 +121,7 @@ def escalado(x, y, sx, sy):
 
 ### Código relevante
 
-El código está en [`App.jsx`](threejs/taller-0/App.jsx) y contiene toda la escena en React Three Fiber.
+El código está en [`App.jsx`](threejs/taller-0/src/App.jsx) y contiene toda la escena en React Three Fiber.
 
 ```jsx
 import { Canvas, useFrame } from '@react-three/fiber';
