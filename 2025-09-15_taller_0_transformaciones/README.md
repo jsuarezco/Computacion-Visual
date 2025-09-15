@@ -22,24 +22,50 @@ Este taller implementa transformaciones geométricas básicas (traslación, rota
 4. **Animación**  
    - Se usa `matplotlib.animation.FuncAnimation` para interpolar los valores de traslación, rotación y escala en cada frame.  
 
-### Capturas de pantalla / GIFs (OBLIGATORIO)
+### Capturas de pantalla / GIFs 
 - Imagen 1: Casa original.  
+![Casa](python/Casa.png)
 - Imagen 2: Traslación aplicada.  
+![Traslacion](python/Traslacion.png)
 - Imagen 3: Rotación aplicada.  
-- Imagen 4: Escalado aplicado.  
+![Rotacion](python/Rotacion.png)
+- Imagen 4: Escalado aplicado. 
+![Escalado](python/Escalado.png)
 - GIF: Animación combinada.  
+![Animation](python/Animation.gif)
 
-*(Subir los archivos PNG/GIF al repositorio y enlazarlos aquí).*
 
 ### Código relevante
-El código está en el archivo [`taller_0.py`](./taller_0.py) y en el notebook [`Taller_0.ipynb`](./Taller_0.ipynb).  
+El código está en el archivo [`taller_0.py`](.python/taller_0.py) y en el notebook [`Taller_0.ipynb`](.python/Taller_0.ipynb).  
 
-Ejemplo de traslación en Python:
+### Funciones principales (Python)
 ```python
+import numpy as np
+
+# Traslación
 def traslacion(x, y, dx, dy):
     T = np.array([[1, 0, dx],
                   [0, 1, dy],
                   [0, 0, 1]])
     puntos = np.column_stack([x, y, np.ones(len(x))])
     puntos_t = (T @ puntos.T).T
+    return puntos_t[:,0], puntos_t[:,1]
+
+# Rotación
+def rotacion(x, y, angulo):
+    a = np.deg2rad(angulo)
+    R = np.array([[ np.cos(a), -np.sin(a), 0],
+                  [ np.sin(a),  np.cos(a), 0],
+                  [ 0,          0,         1]])
+    puntos = np.column_stack([x, y, np.ones(len(x))])
+    puntos_t = (R @ puntos.T).T
+    return puntos_t[:,0], puntos_t[:,1]
+
+# Escalado
+def escalado(x, y, sx, sy):
+    S = np.array([[sx, 0, 0],
+                  [0, sy, 0],
+                  [0,  0, 1]])
+    puntos = np.column_stack([x, y, np.ones(len(x))])
+    puntos_t = (S @ puntos.T).T
     return puntos_t[:,0], puntos_t[:,1]
