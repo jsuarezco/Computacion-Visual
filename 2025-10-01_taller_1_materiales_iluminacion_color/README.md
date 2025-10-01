@@ -42,7 +42,7 @@ Se aplicaron materiales **PBR estándar**:
 - **Luces:** intensidad y posición de la luz del Monk varían durante el salto, simulando brillo dinámico.
 - **Cámara:** recorrido circular opcional alrededor de la escena.
 
-### Paleta de colores RGB
+## Paleta de colores RGB
 
 **Preset Día**
 
