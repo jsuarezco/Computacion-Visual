@@ -42,9 +42,28 @@ Se aplicaron materiales **PBR estándar**:
 - **Luces:** intensidad y posición de la luz del Monk varían durante el salto, simulando brillo dinámico.
 - **Cámara:** recorrido circular opcional alrededor de la escena.
 
-## Modelo de Color
-- **Paleta principal:** RGB y HSV
-  - Verde hierba, azul cielo, tonos cálidos naranjas para atardecer.
+### Paleta de colores RGB
+
+**Preset Día**
+
+* **Ambient / Fondo general:** gris claro → `RGB(128, 128, 128)`
+* **Key Light (principal):** blanco → `RGB(255, 255, 255)`
+* **Fill Light (suave):** azul claro → `RGB(160, 207, 255)`
+* **Rim Light (resalte):** blanco → `RGB(255, 255, 255)`
+* **Suelo / plano:** azul intenso → `RGB(0, 0, 255)`
+
+**Preset Atardecer**
+
+* **Ambient / Fondo general:** gris tenue → `RGB(77, 77, 77)`
+* **Key Light (principal):** naranja cálido → `RGB(255, 184, 112)`
+* **Fill Light (suave):** azul suave → `RGB(127, 161, 255)`
+* **Rim Light (resalte):** naranja pálido → `RGB(255, 207, 160)`
+
+**Shaders / Damero**
+
+* **Blanco:** `RGB(255, 255, 255)`
+* **Negro:** `RGB(0, 0, 0)`
+
 - **Justificación:** alto contraste perceptual para resaltar personajes y objetos importantes; se considera el espacio CIELAB para asegurar legibilidad y diferenciación visual.
 
 ### Capturas de pantalla / GIFs
