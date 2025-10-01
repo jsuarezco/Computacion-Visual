@@ -47,13 +47,13 @@ Se aplicaron materiales **PBR estándar**:
   - Verde hierba, azul cielo, tonos cálidos naranjas para atardecer.
 - **Justificación:** alto contraste perceptual para resaltar personajes y objetos importantes; se considera el espacio CIELAB para asegurar legibilidad y diferenciación visual.
 
-## Capturas de Pantalla
-- Día: `Capturas/Dia.png`
-- Atardecer: `Capturas/Tarde.png`
-- Damero en día: `Capturas/DameroDia.png`
-- Damero en atardecer: `Capturas/DameroTarde.png`
-- Cámara ortográfica: `Capturas/Ortografica.png`
+## threejs/Capturas de Pantalla
+- Día: `threejs/Capturas/Dia.png`
+- Atardecer: `threejs/Capturas/Tarde.png`
+- Damero en día: `threejs/Capturas/DameroDia.png`
+- Damero en atardecer: `threejs/Capturas/DameroTarde.png`
+- Cámara ortográfica: `threejs/Capturas/Ortografica.png`
 
 ## GIFs Animados
-- Recorrido de cámara y movimiento de luces: `Capturas/Recorrido.gif`
-- Saltos del Monk con shaders procedurales activos: `Capturas/Saltos.gif`
+- Recorrido de cámara y movimiento de luces: `threejs/Capturas/Recorrido.gif`
+- Saltos del Monk con shaders procedurales activos: `threejs/Capturas/Saltos.gif`
