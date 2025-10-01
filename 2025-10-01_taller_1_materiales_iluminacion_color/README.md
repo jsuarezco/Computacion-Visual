@@ -6,9 +6,9 @@ Este proyecto representa un **mundo 3D interactivo** que combina un paisaje fant
 ## Modelos GLB Usados
 | Nombre del Modelo | Fuente | Modificaciones |
 |------------------|--------|----------------|
-| throne_of_rock.glb | Descargado de `/glb_models/` | Escala: 0.008, Posición: [-2, 4.3, 2.6], Material: original o con damero |
-| medieval_fantasy_-_large_island.glb | Descargado de `/glb_models/` | Escala: 0.4, Posición: [17, 0, 18], Material: original o con damero |
-| monk_character.glb | Descargado de `/glb_models/` | Escala: 1, Posición inicial: [-2, 4.7, 3], Material: original o con damero |
+| throne_of_rock.glb | Descargado de `https://sketchfab.com/3d-models/throne-of-rock-8de6fa4b9d7e488080828d155891c8f8` | Escala: 0.008, Posición: [-2, 4.3, 2.6], Material: original o con damero |
+| medieval_fantasy_-_large_island.glb | Descargado de `https://sketchfab.com/3d-models/medieval-fantasy-large-island-978d070d08e4476d869b887bfbdf0835` | Escala: 0.4, Posición: [17, 0, 18], Material: original o con damero |
+| monk_character.glb | Descargado de `https://sketchfab.com/3d-models/monk-character-8cacbd85a5b84f59a8c9000d7a6dcca2` | Escala: 1, Posición inicial: [-2, 4.7, 3], Material: original |
 
 ## Iluminación
 Se implementaron **tres tipos de luces direccionales** y una luz ambiental:
