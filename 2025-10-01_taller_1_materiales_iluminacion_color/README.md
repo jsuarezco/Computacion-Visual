@@ -47,13 +47,18 @@ Se aplicaron materiales **PBR estándar**:
   - Verde hierba, azul cielo, tonos cálidos naranjas para atardecer.
 - **Justificación:** alto contraste perceptual para resaltar personajes y objetos importantes; se considera el espacio CIELAB para asegurar legibilidad y diferenciación visual.
 
-## threejs/Capturas de Pantalla
-- Día: `threejs/Capturas/Dia.png`
-- Atardecer: `threejs/Capturas/Tarde.png`
-- Damero en día: `threejs/Capturas/DameroDia.png`
-- Damero en atardecer: `threejs/Capturas/DameroTarde.png`
-- Cámara ortográfica: `threejs/Capturas/Ortografica.png`
-
-## GIFs Animados
-- Recorrido de cámara y movimiento de luces: `threejs/Capturas/Recorrido.gif`
-- Saltos del Monk con shaders procedurales activos: `threejs/Capturas/Saltos.gif`
+### Capturas de pantalla / GIFs
+- Imagen 1: Escena en modo Día.  <br>
+![Día](threejs/Capturas/Dia.png)<br>
+- Imagen 2: Escena en modo Atardecer.  <br>
+![Atardecer](threejs/Capturas/Tarde.png)<br>
+- Imagen 3: Damero aplicado en luz Día.  <br>
+![Damero Día](threejs/Capturas/DameroDia.png)<br>
+- Imagen 4: Damero aplicado en luz Atardecer.  <br>
+![Damero Atardecer](threejs/Capturas/DameroTarde.png)<br>
+- Imagen 5: Vista de cámara Ortográfica.  <br>
+![Ortográfica](threejs/Capturas/Ortografica.png)<br>
+- GIF 1: Recorrido de cámara por la escena.  <br>
+![Recorrido](threejs/Capturas/Recorrido.gif)<br>
+- GIF 2: Saltos del monk con luz animada.  <br>
+![Saltos](threejs/Capturas/Saltos.gif)<br>
