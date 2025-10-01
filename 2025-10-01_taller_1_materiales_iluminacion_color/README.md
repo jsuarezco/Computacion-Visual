@@ -66,7 +66,7 @@ Se aplicaron materiales **PBR estándar**:
 
 - **Justificación:** alto contraste perceptual para resaltar personajes y objetos importantes; se considera el espacio CIELAB para asegurar legibilidad y diferenciación visual.
 
-### Capturas de pantalla / GIFs
+## Capturas de pantalla / GIFs
 - Imagen 1: Escena en modo Día.  <br>
 ![Día](threejs/Capturas/Dia.png)<br>
 - Imagen 2: Escena en modo Atardecer.  <br>
