@@ -7,7 +7,7 @@ Repositorio para la asignatura **Computación Visual**.
 - Talleres y ejercicios prácticos.
 - Ejemplos de código relacionados con transformaciones, procesamiento y análisis de imágenes.
 - Material de apoyo para el curso.
-
+.
 ## Estructura de carpetas
 
 - `2025-09-1_taller_0_transformaciones/`: Primer taller sobre transformaciones.
