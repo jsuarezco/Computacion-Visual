@@ -25,7 +25,7 @@ Se usa `ImageFilter.FIND_EDGES` para resaltar contornos y formas predominantes.
 
 ### Resultados
 
-![Original](img/1.png)
+![Original](python/data/1.png)
 
 ---
 
@@ -37,7 +37,7 @@ Cada canal se muestra en escala de grises.
 
 ### Resultados
 
-![2](img/2.png)
+![2](python/data/2.png)
 
 ### Explicación de los canales
 
@@ -68,7 +68,7 @@ La erosión disminuye las zonas claras y elimina pequeños puntos brillantes, re
 
 ### Resultados
 
-![3](img/3.png)
+![3](python/data/3.png)
 
 ### Explicación
 
@@ -91,4 +91,4 @@ La animación se muestra en pantalla y opcionalmente se puede guardar como GIF.
 
 Ejemplo mostrado:
 
-![Animacion](img/animacion_(1).gif)
+![Animacion](python/gifs/animacion_(1).gif)
