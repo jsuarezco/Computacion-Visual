@@ -83,7 +83,7 @@ Ejemplo mostrado:
 
 ----
 
-# Punto 2 – Escena con Formas Básicas en Three.js (50%)
+# Punto 2 – Escena con Formas Básicas en Three.js
 
 Este proyecto contiene una **escena 3D interactiva** construida con **Three.js** y **React Three Fiber**.
 
