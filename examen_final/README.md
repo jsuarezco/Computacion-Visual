@@ -180,7 +180,7 @@ El usuario puede interactuar con la cámara mediante el mouse o trackpad:
 ### 1. Notebook de Python (Procesamiento de Imágenes)
 
 1. Abrir [Google Colab](https://colab.research.google.com/).  
-2. Subir el archivo `procesamiento_imagenes.ipynb`.  
+2. Subir el archivo `Python.ipynb`.  
 3. Subir la imagen `animal_en_extincion.jpg`.  
 4. Ejecutar todas las celdas del notebook secuencialmente para visualizar la imagen, aplicar filtros, operaciones morfológicas y generar GIFs.
 
