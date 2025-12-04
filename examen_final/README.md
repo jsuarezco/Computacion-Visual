@@ -128,8 +128,7 @@ Se añadieron varias luces para darle realismo a la escena:
 
 - `ambientLight` → luz ambiental suave.
 - `directionalLight` → luz principal proveniente de arriba.
-- `pointLight` en el centro de la escena.
-- `pointLight` cerca de la esfera, para destacar su textura y movimiento.
+- `pointLight` cerca de la esfera y del tetraedro, para destacar su textura y movimiento.
 
 ---
 
@@ -176,5 +175,24 @@ El usuario puede interactuar con la cámara mediante el mouse o trackpad:
 
 ---
 
-## 7. Estructura del proyecto
+# Punto 3 - Instrucciones de ejecución
 
+### 1. Notebook de Python (Procesamiento de Imágenes)
+
+1. Abrir [Google Colab](https://colab.research.google.com/).  
+2. Subir el archivo `procesamiento_imagenes.ipynb`.  
+3. Subir la imagen `animal_en_extincion.jpg`.  
+4. Ejecutar todas las celdas del notebook secuencialmente para visualizar la imagen, aplicar filtros, operaciones morfológicas y generar GIFs.
+
+---
+
+### 2. Proyecto Three.js / React Three Fiber
+
+1. Abrir la consola o terminal y ubicarse en la carpeta del proyecto:
+
+```bash
+cd examen_final/threejs/punto-2
+
+npm install
+
+npm run dev
