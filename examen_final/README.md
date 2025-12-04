@@ -192,7 +192,15 @@ El usuario puede interactuar con la cámara mediante el mouse o trackpad:
 
 ```bash
 cd examen_final/threejs/punto-2
-
+```
+2. Instalar dependencias:
+```bash
 npm install
+```
 
+3. Ejecutar el servidor
+```bash
 npm run dev
+```
+
+Abrir la URL que indique Vite (normalmente http://localhost:5173) en el navegador.
