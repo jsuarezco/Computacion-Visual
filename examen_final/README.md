@@ -91,4 +91,4 @@ La animación se muestra en pantalla y opcionalmente se puede guardar como GIF.
 
 Ejemplo mostrado:
 
-![Animacion](img/animacion (1).gif)
+![Animacion](img/animacion_(1).gif)
