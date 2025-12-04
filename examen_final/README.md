@@ -26,7 +26,7 @@ Se usa `ImageFilter.FIND_EDGES` para resaltar contornos y formas predominantes.
 
 ### Resultados
 
-![Original](img/1.jpg)
+![Original](img/1.png)
 
 ---
 
