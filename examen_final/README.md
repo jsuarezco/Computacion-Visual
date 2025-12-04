@@ -1,5 +1,4 @@
-# Procesamiento de Imagen: Filtros, Canales, Operaciones Morfológicas y Animación
-
+# Punto 1 – Procesamiento de Imágenes en Python
 Este proyecto aplica diferentes técnicas de procesamiento digital de imágenes utilizando Python y la librería Pillow (PIL). Se trabaja con una imagen de un panda rojo en un entorno natural, sobre la cual se realizan filtros básicos, separación de canales, operaciones morfológicas y una animación mostrando los resultados.
 
 ## Requisitos
@@ -10,7 +9,7 @@ pip install pillow
 ```
 
 ## Archivo principal
-El código utilizado se encuentra en `exe.py` y realiza los siguientes procesos:
+El código utilizado se encuentra en `Python.ipynb` y realiza los siguientes procesos:
 
 ---
 
@@ -38,17 +37,7 @@ Cada canal se muestra en escala de grises.
 
 ### Resultados
 
-Canal R:
-
-![Canal R](img/canal_r.jpg)
-
-Canal G:
-
-![Canal G](img/canal_g.jpg)
-
-Canal B:
-
-![Canal B](img/canal_b.jpg)
+![2](img/2.png)
 
 ### Explicación de los canales
 
@@ -79,17 +68,7 @@ La erosión disminuye las zonas claras y elimina pequeños puntos brillantes, re
 
 ### Resultados
 
-Escala de grises:
-
-![Gris](img/gris.jpg)
-
-Dilatación:
-
-![Dilatacion](img/dilatacion.jpg)
-
-Erosión:
-
-![Erosion](img/erosion.jpg)
+![3](img/3.png)
 
 ### Explicación
 
@@ -112,38 +91,4 @@ La animación se muestra en pantalla y opcionalmente se puede guardar como GIF.
 
 Ejemplo mostrado:
 
-![Animacion](img/animacion.gif)
-
----
-
-# Estructura de carpetas
-```
-Proyecto/
-│ exe.py
-│ README.md
-│
-└── img/
-   │ original.jpg
-   │ blur.jpg
-   │ edges.jpg
-   │ gris.jpg
-   │ dilatacion.jpg
-   │ erosion.jpg
-   │ canal_r.jpg
-   │ canal_g.jpg
-   │ canal_b.jpg
-   │ animacion.gif
-```
-
----
-
-# Conclusión
-
-Este proyecto permite comprender conceptos fundamentales del procesamiento digital de imágenes:
-
-- Filtrado espacial para suavizado y detección de bordes
-- Análisis de canales RGB
-- Operaciones morfológicas básicas
-- Construcción de animaciones cuadro a cuadro
-
-Las técnicas pueden ampliarse para aplicaciones de visión artificial, segmentación, análisis de escenas y más.
+![Animacion](img/animacion (1).gif)
